@@ -1,73 +1,120 @@
-
+import React from "react";
+import axios from "axios";
 
 
 export default function Contact() {
+
+	const [formState, setFormState] = React.useState({});
+	const [loading, setLoading] = React.useState(false);
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setLoading(true);
+
+		axios.post("https://n8n.nashandpine.com/webhook/8ea4a455-463b-4ed4-a15f-0cd001b4892c", {...formState})
+			.then(() => setLoading(false))
+			.catch(e = console.error(e));
+	};
+
+	
+	const handleChange = (e) => {
+		const stateCopy = {...formState};
+
+		stateCopy[e.target.name] = e.target.value;
+
+		setFormState(stateCopy);
+	};
+
+
 	return (
-		<section className="py-12" id="contact">
+		<section className="py-4 md:py-12" id="contact">
 			<div className="container px-4 mx-auto">
 				<div className="flex flex-wrap -mx-3">
-					<div className="w-full lg:w-1/2 px-3">
-						<div className="max-w-sm">
+					<div className="w-full lg:w-1/2 px-3 text-center lg:text-left">
+						<div>
 							<h2 className="mt-2 text-4xl font-bold font-heading">Still have questions?</h2>
 							<h3 className="my-2 text-3xl font-heading">Intrested in a demo?</h3>
 							<span className="text-sm text-blueGray-400">Contact Us</span>
 						</div>
 						<div className="mt-10">
 							<div className="mb-10 leading-relaxed">
-								<h3 className="text-sm text-blueGray-400">Phone</h3>
-								<p>(252) 243-5151</p>
+								<a href="tel:2522435151">
+									<h3 className="text-sm font-bold">Phone</h3>
+									<p>(252) 243-5151</p>
+								</a>
 							</div>
 							<div className="mb-10 leading-relaxed">
-								<h4 className="text-sm text-blueGray-400">E-mail</h4>
-								<p>help@wilsontimes.com</p>
+								<a href="mailto:contact@nashandpine.com">
+									<h4 className="text-sm font-bold">E-mail</h4>
+									<p>contact@nashandpine.com</p>
+								</a>
 							</div>
 							<div className="mb-10 leading-relaxed">
-								<h4 className="text-sm text-blueGray-400">Address</h4>
-								<p>126 Nash St. W.</p>
-								<p>Wilson, North Carolina 27893</p>
+								<a href="https://www.google.com/maps/place/126+Nash+St,+Wilson,+NC+27893/@35.7265226,-77.9118342,3a,75y,49.28h,90t/data=!3m7!1e1!3m5!1suWdLwlXH4x9sFASmVd4g0w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DuWdLwlXH4x9sFASmVd4g0w%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D49.275272%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x89ae9e11f2463067:0x11e82fb553cee021!8m2!3d35.7266678!4d-77.9116124" target="_blank" rel="noreferrer">
+									<h4 className="text-sm font-bold">Address</h4>
+									<p>126 Nash St. W.</p>
+									<p>Wilson, North Carolina 27893</p>
+								</a>
 							</div>
 						</div>
 					</div>
 
 					<div className="w-full lg:w-1/2 px-3">
-						<form>
-							<div className="mb-4">
-								<input 
-									className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
-									type="text" placeholder="Subject"
-								/>
-							</div>
+						<div className="flex items-center h-full">
+							
+							<form 
+								onSubmit={handleSubmit}
+								className="w-full" 
+								onChange={handleChange}
+							>
+								<div className="mb-4">
+									<input 
+										required
+										className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
+										type="email" placeholder="Email" name="email"
+									/>
+								</div>
 
-							<div className="mb-4">
-								<input 
-									className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
-									type="text" placeholder="Name"
-								/>
-							</div>
+								<div className="mb-4">
+									<input 
+										required
+										className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
+										type="text" placeholder="Subject" name="subject"
+									/>
+								</div>
 
-							<div className="mb-4">
-								<input 
-									className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
-									type="email" placeholder="Email"
-								/>
-							</div>
+								<div className="mb-4">
+									<input 
+										required
+										className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
+										type="text" placeholder="Name" name="name"
+									/>
+								</div>
 
-							<div className="mb-4">
-								<textarea 
-									className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blue-50 rounded outline-none" 
-									type="text" placeholder="Message..."
-								>
-								</textarea>
-							</div>
+								<div className="mb-4">
+									<input 
+										required
+										className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
+										type="text" placeholder="Company" name="company"
+									/>
+								</div>
 
-							<div className="flex justify-between items-center">
-								{/* <label>
-									<input className="mr-1" type="checkbox" name="terms" value="1" />
-									<span className="text-sm font-semibold">I agree to terms and conditions.</span>
-								</label> */}
-								<button className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" type="submit">Submit</button>
-							</div>
-						</form>
+								<div className="mb-4">
+									<textarea 
+										required
+										className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blue-50 rounded outline-none" 
+										type="text" placeholder="Message..." name="message"
+									>
+									</textarea>
+								</div>
+
+								<div className="flex justify-between items-center">
+
+									{loading && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-gray-600 rounded">Loading...</button>}
+									{!loading && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" type="submit">Submit</button>}	
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

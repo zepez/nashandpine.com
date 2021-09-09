@@ -1,4 +1,4 @@
-
+import Cloud from "./cloud";
 
 
 export default function Projects() {
@@ -15,32 +15,32 @@ export default function Projects() {
 				{/* start images  */}
 				<div className="flex flex-wrap lg:flex-nowrap lg:items-center max-w-lg lg:max-w-full mx-auto">
 					<div className="w-full lg:w-1/4 p-3">
-						<img className="rounded object-cover mx-auto" src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+						<Cloud logo="enterprise" height={{ desktop: 12, mobile: 4 }} width={{ desktop: 6, mobile: 16 }} link="https://springhopeenterprise.com" />
 					</div>
 
 					<div className="w-full lg:w-2/4 flex flex-col">
-						<div className="flex items-end">
-							<div className="w-2/3 p-3">
-								<img className="rounded object-cover" src="https://images.unsplash.com/photo-1529513342590-3b342bb7dd67?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+						<div className="md:flex md:items-end">
+							<div className="w-full lg:w-2/3 p-3">
+								<Cloud logo="wilsontimes" height={{ desktop: 20, mobile: 6 }} width={{ desktop: 6, mobile: 8 }} link="https://wilsontimes.com" />
 							</div>
-							<div className="w-1/3 p-3">
-								<img className="h-48 lg:h-32 rounded object-cover" src="https://images.unsplash.com/photo-1489058535093-8f530d789c3b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+							<div className="w-full lg:w-1/3 p-3">
+								<Cloud logo="dailydrum" height={{ desktop: 16, mobile: 6 }} width={{ desktop: 4, mobile: 8 }} link="https://dailydrummedia.com" />
 							</div>
 						</div>
 
-						<div className="flex items-start">
-							<div className="w-1/3 p-3">
-								<img className="h-48 lg:h-32 rounded object-cover" src="https://images.unsplash.com/photo-1602883440931-c268da6122b0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+						<div className="md:flex md:items-start">
+							<div className="w-full lg:w-1/3 p-3">
+								<Cloud logo="butnercreedmoor" height={{ desktop: 16, mobile: 4 }} width={{ desktop: 4, mobile: 16 }} link="https://butnercreedmoornews.com" />
 							</div>
-							<div className="w-2/3 p-3">
-								<img className="rounded object-cover" src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+							<div className="w-full lg:w-2/3 p-3">
+								<Cloud logo="robinson" height={{ desktop: 20, mobile: 6 }} width={{ desktop: 12, mobile: 28 }} link="https://robdailynews.com/" />
 							</div>
 						</div>
 
 					</div>
 					
 					<div className="w-full lg:w-1/4 p-3">
-						<img className="rounded object-cover mx-auto" src="https://images.unsplash.com/photo-1596003428876-436e282a94cd?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" />
+						<Cloud logo="wakeweekly" height={{ desktop: 16, mobile: 6 }} width={{ desktop: 4, mobile: 8 }} link="https://wakeweekly.com" />
 					</div>
 				</div>
 			</div>

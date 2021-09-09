@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="mx-8 md:mx-0">
 			<Meta />	
 			<Header />
 			<div style={{ maxWidth: 1000, display: "block", margin: "0 auto" }}>
