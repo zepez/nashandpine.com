@@ -15,7 +15,7 @@ export default function Header() {
 						<h2 className="text-5xl md:text-7xl mb-4 font-bold font-heading">
 							<span>Nash & Pine.</span>
 						</h2>
-						<p className="text-blueGray-400 leading-relaxed text-md md:text-xl">Take your first step in the journey of online monetization.</p>
+						<p className="leading-relaxed text-md md:text-xl">Take your first step in the journey of online monetization.</p>
 					</div>
 				</div>
 			</div>
@@ -28,7 +28,7 @@ export default function Header() {
 				</div>
 			</div> */}
 			<div className="max-w-4xl mt-12 mb:pb-24 mx-auto">
-				<img className="rounded-lg glow" src="screenshot.png" alt="" />
+				<img className="rounded-lg glow" src="screenshot-old.png" alt="" />
 			</div>
 
 			{/* mobile navigation  */}
