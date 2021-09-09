@@ -44,6 +44,6 @@ Here's some notable Digital Ocean CLI commands:
 
 #### Docker
  - `doctl registry login`
- - `docker tag [imageid] registry.digitalocean.com/nap/nap:version`
- - `docker push registry.digitalocean.com/nap/nap:version`
+ - `docker tag [imageid] registry.digitalocean.com/nap/nashandpine:version`
+ - `docker push registry.digitalocean.com/nap/nashandpine:version`
 
