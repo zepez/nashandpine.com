@@ -11,6 +11,9 @@ export default function Contact() {
 		e.preventDefault();
 		setLoading(true);
 
+		// testing: https://n8n.nashandpine.com/webhook-test/8ea4a455-463b-4ed4-a15f-0cd001b4892c
+		// production: https://n8n.nashandpine.com/webhook/8ea4a455-463b-4ed4-a15f-0cd001b4892c
+		
 		axios.post("https://n8n.nashandpine.com/webhook/8ea4a455-463b-4ed4-a15f-0cd001b4892c", {...formState})
 			.then(() => setLoading(false))
 			.catch(e = console.error(e));
@@ -71,7 +74,15 @@ export default function Contact() {
 									<input 
 										required
 										className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
-										type="email" placeholder="Email" name="email"
+										type="email" placeholder="Work email" name="email"
+									/>
+								</div>
+
+								<div className="mb-4">
+									<input 
+										required
+										className="w-full p-4 text-xs font-semibold leading-none bg-blue-50 rounded outline-none" 
+										type="phone" placeholder="Work phone" name="phone"
 									/>
 								</div>
 

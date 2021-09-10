@@ -27,8 +27,31 @@ export default function Header() {
 					<img className="rounded-lg border-8 border-white glow" src="web-example-new.png" alt="" />
 				</div>
 			</div> */}
-			<div className="max-w-4xl mt-12 mb:pb-24 mx-auto">
+
+			{/* single big image  */}
+			{/* <div className="max-w-4xl mt-12 mb:pb-24 mx-auto">
 				<img className="rounded-lg glow" src="screenshot-old.png" alt="" />
+			</div> */}
+
+			{/* quad  */}
+			{/* <div className="flex justify-center items-center max-w-4xl mx-auto px-2">
+				<div className="max-w-lg mx-auto mb-16 px-2 md:mx-4">
+					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_01.png" alt="" />
+					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_03.png" alt="" />
+				</div>
+
+				<div className="max-w-lg mx-auto mt-16 px-2 md:mx-4">
+					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_02.png" alt="" />
+					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_04.png" alt="" />
+				</div>
+			</div> */}
+
+
+			{/* single big image  */}
+			<div className="block md:flex mt-12 mb:pb-24 mx-auto px-0 md:px-8">
+				<img className="rounded-lg md:w-1/3 px-1 mx-auto my-2" src="screenshot_02.png" alt="" />
+				<img className="rounded-lg md:w-1/3 px-1 mx-auto my-2" src="screenshot_01.png" alt="" />
+				<img className="rounded-lg md:w-1/3 px-1 mx-auto my-2" src="screenshot_03.png" alt="" />
 			</div>
 
 			{/* mobile navigation  */}
