@@ -5,7 +5,7 @@ export default function DesktopNav() {
 	return (
 		<nav className="flex justify-between items-center py-6 border-b-4">
 			<a className="text-3xl font-semibold leading-none" href="#home">
-				<img className="h-8" src="logo.svg" alt="" width="126px" />
+				<img className="h-12" src="logo_02.svg" alt="" width="126px" />
 			</a>
 			<div className="lg:hidden">
 				<button className="navbar-burger flex items-center py-2 px-3 text-blue-600 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300">

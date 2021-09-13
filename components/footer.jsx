@@ -7,7 +7,9 @@ export default function Footer() {
 			<div className="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
 				<div className="w-full lg:w-1/5 px-3 mb-6 lg:mb-0 flex items-center justify-center">
 					<a className="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="#home">
-						<img className="h-10" src="logo.svg" alt="" width="auto" />
+						{/* <img className="h-16" src="logo_03.svg" alt="" width="auto" /> */}
+						<img className="h-16" src="logo_02.svg" alt="" width="auto" />
+						{/* <img className="h-24" src="logo_full_01.jpg" alt="" width="auto" /> */}
 					</a>
 				</div>
 
