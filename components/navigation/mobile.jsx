@@ -16,9 +16,10 @@ export default function MobileNav() {
 				</div>
 				<div>
 					<ul>
-						<li className="mb-1"><a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#features">Features</a></li>
-						<li className="mb-1"><a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#projects">Websites</a></li>
-						<li className="mb-1"><a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="#faq">FAQ</a></li>
+						<li className="mb-1"><a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/#features">Features</a></li>
+						<li className="mb-1"><a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/#projects">Websites</a></li>
+						<li className="mb-1"><a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/#faq">FAQ</a></li>
+						<li className="mb-1"><a className="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-600" href="/directory">Directory</a></li>
 					</ul>
 					<div className="mt-4 pt-6 border-t border-blueGray-100">
 						<a className="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#contact">Request a demo</a>

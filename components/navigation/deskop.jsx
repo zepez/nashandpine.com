@@ -16,9 +16,10 @@ export default function DesktopNav() {
 				</button>
 			</div>
 			<ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-				<li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#features">Features</a></li>
-				<li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#projects">Websites</a></li>
-				<li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="#faq">FAQ</a></li>
+				<li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="/#features">Features</a></li>
+				<li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="/#projects">Websites</a></li>
+				<li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="/#faq">FAQ</a></li>
+				<li><a className="text-sm text-blueGray-400 hover:text-blueGray-500" href="/directory">Directory</a></li>
 			</ul>
 			<div className="hidden lg:block">
 				<a className="inline-block px-4 py-3 text-xs font-semibold leading-none bg-blue-600 hover:bg-blue-700 text-white rounded" href="#contact">
