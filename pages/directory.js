@@ -1,7 +1,31 @@
-import Meta from "../components/meta";
+import Head from "next/head";
+import GlobalMeta from "../components/meta";
 import DesktopNav from "../components/navigation/deskop";
 import MobileNav from "../components/navigation/mobile";
 import Footer from "../components/footer";
+
+
+const Meta = () => {
+	return (
+		<Head>		
+			<title>Nash&Pine — Website directory</title>
+			<meta name="title" content="Nash&Pine — Website directory" />
+			<meta name="description" content="N&P website directory" />
+
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="https://nashandpine.com/directory" />
+			<meta property="og:title" content="Nash&Pine — Website directory" />
+			<meta property="og:description" content="N&P website directory" />
+			<meta property="og:image" content="https://nashandpine.com/logos/nap/share.jpg" />
+
+			<meta property="twitter:card" content="summary_large_image" />
+			<meta property="twitter:url" content="https://nashandpine.com/directory" />
+			<meta property="twitter:title" content="Nash&Pine — Website directory" />
+			<meta property="twitter:description" content="N&P website directory" />
+			<meta property="twitter:image" content="https://nashandpine.com/logos/nap/share.jpg" />
+		</Head>
+	);
+};
 
 
 const ListItem = (props) => {
@@ -30,7 +54,8 @@ const SiteList = (props) => {
 export default function Directory() {
 	return (
 		<div className="mx-8 md:mx-0">
-			<Meta />	
+			<Meta />
+			<GlobalMeta />
 			<div className="container px-4 mx-auto">
 				<DesktopNav />
 			</div>

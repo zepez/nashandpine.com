@@ -6,8 +6,8 @@ export default function Footer() {
 		<section className="pt-20 mb-10"><div className="container px-4 mx-auto pt-8 border-t-4">
 			<div className="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
 				<div className="w-full lg:w-1/5 px-3 mb-6 lg:mb-0 flex items-center justify-center">
-					<a className="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="#home">
-						<img className="h-16" src="logo_02.svg" alt="" width="auto" />
+					<a className="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="/#home">
+						<img className="h-16" src="/logos/nap/short.svg" alt="" width="auto" />
 					</a>
 				</div>
 
