@@ -13,18 +13,18 @@ const Meta = () => {
 		<Head>		
 			<title>Nash&Pine — Websites that let your message shine</title>
 			<meta name="title" content="Nash&Pine — Websites that let your message shine" />
-			<meta name="description" content="Websites built to your specifications with your viewer in mind." />
+			<meta name="description" content="In today’s digital-first world having an online presence is more important than ever. Many individuals start with the internet to learn about goods and services. Let Nash&Pine help you broaden your reach with a professionally designed website that..." />
 
 			<meta property="og:type" content="website" />
 			<meta property="og:url" content="https://nashandpine.com" />
 			<meta property="og:title" content="Nash&Pine — Websites that let your message shine" />
-			<meta property="og:description" content="Websites built to your specifications with your viewer in mind." />
+			<meta property="og:description" content="In today’s digital-first world having an online presence is more important than ever. Many individuals start with the internet to learn about goods and services. Let Nash&Pine help you broaden your reach with a professionally designed website that..." />
 			<meta property="og:image" content="https://nashandpine.com/logos/nap/share.jpg" />
 
 			<meta property="twitter:card" content="summary_large_image" />
 			<meta property="twitter:url" content="https://nashandpine.com" />
 			<meta property="twitter:title" content="Nash&Pine — Websites that let your message shine" />
-			<meta property="twitter:description" content="Websites built to your specifications with your viewer in mind." />
+			<meta property="twitter:description" content="In today’s digital-first world having an online presence is more important than ever. Many individuals start with the internet to learn about goods and services. Let Nash&Pine help you broaden your reach with a professionally designed website that..." />
 			<meta property="twitter:image" content="https://nashandpine.com/logos/nap/share.jpg" />
 		</Head>
 	);
