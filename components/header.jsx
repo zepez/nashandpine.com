@@ -15,37 +15,10 @@ export default function Header() {
 						<h2 className="text-5xl md:text-7xl mb-4 font-bold font-heading">
 							<span>Nash & Pine.</span>
 						</h2>
-						<p className="leading-relaxed text-md md:text-xl">Take your first step in the journey of online monetization.</p>
+						<p className="leading-relaxed text-md md:text-xl">Websites that let your message shine.</p>
 					</div>
 				</div>
 			</div>
-
-			{/* splash background  */}
-			{/* <div className="relative max-w-6xl mt-16 md:mt-8 mb-8 mx-auto">
-				<img src="metis-assets/elements/pattern.png" alt="" />
-				<div className="absolute" style={{ top: "9%", left: "14%", width: "72%", height: "66%" }}>
-					<img className="rounded-lg border-8 border-white glow" src="web-example-new.png" alt="" />
-				</div>
-			</div> */}
-
-			{/* single big image  */}
-			{/* <div className="max-w-4xl mt-12 mb:pb-24 mx-auto">
-				<img className="rounded-lg glow" src="screenshot-old.png" alt="" />
-			</div> */}
-
-			{/* quad  */}
-			{/* <div className="flex justify-center items-center max-w-4xl mx-auto px-2">
-				<div className="max-w-lg mx-auto mb-16 px-2 md:mx-4">
-					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_01.png" alt="" />
-					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_03.png" alt="" />
-				</div>
-
-				<div className="max-w-lg mx-auto mt-16 px-2 md:mx-4">
-					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_02.png" alt="" />
-					<img className="rounded-lg glow my-8 shadow-xl" src="screenshot_04.png" alt="" />
-				</div>
-			</div> */}
-
 
 			{/* single big image  */}
 			<div className="block md:flex mt-12 mb:pb-24 mx-auto px-0 md:px-8">

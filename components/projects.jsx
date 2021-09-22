@@ -7,9 +7,8 @@ export default function Projects() {
 			<div className="container px-4 mx-auto">
 				{/* text  */}
 				<div className="max-w-lg mx-auto mb-12 text-center">
-					<span className="">Lorem ipsum</span>
-					<h2 className="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">Trusted by publications all across the world.</h2>
-					<p className="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p>
+					<h2 className="text-3xl md:text-4xl mt-2 mb-4 font-bold font-heading">Make your business accessible 24/7</h2>
+					<p className="text-blueGray-400 leading-loose">More than 90% of individuals start their search for goods and services online. What opportunities are you missing?</p>
 				</div>
 
 				{/* start images  */}

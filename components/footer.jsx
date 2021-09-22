@@ -7,14 +7,12 @@ export default function Footer() {
 			<div className="flex flex-wrap mb-12 lg:mb-20 -mx-3 text-center lg:text-left">
 				<div className="w-full lg:w-1/5 px-3 mb-6 lg:mb-0 flex items-center justify-center">
 					<a className="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none" href="#home">
-						{/* <img className="h-16" src="logo_03.svg" alt="" width="auto" /> */}
 						<img className="h-16" src="logo_02.svg" alt="" width="auto" />
-						{/* <img className="h-24" src="logo_full_01.jpg" alt="" width="auto" /> */}
 					</a>
 				</div>
 
 				<div className="w-full lg:w-2/5 px-3 mb-8 lg:mb-0 flex items-center">
-					<p className="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo.</p>
+					<p className="max-w-md mx-auto lg:max-w-full lg:mx-0 lg:pr-32 lg:text-lg leading-relaxed">Professional website solutions for your business needs.</p>
 				</div>
 
 				<div className="w-full lg:w-1/5 px-3 mb-8 lg:mb-0">
