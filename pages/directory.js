@@ -12,17 +12,13 @@ const Meta = () => {
 			<meta name="title" content="Nash&Pine — Website directory" />
 			<meta name="description" content="Nash&Pine website directory" />
 
-			<meta property="og:type" content="website" />
 			<meta property="og:url" content="https://nashandpine.com/directory" />
 			<meta property="og:title" content="Nash&Pine — Website directory" />
 			<meta property="og:description" content="More than 90% of individuals start their search for goods and services online. What opportunities are you missing?" />
-			<meta property="og:image" content="https://nashandpine.com/logos/nap/share.jpg" />
 
-			<meta property="twitter:card" content="summary_large_image" />
 			<meta property="twitter:url" content="https://nashandpine.com/directory" />
 			<meta property="twitter:title" content="Nash&Pine — Website directory" />
 			<meta property="twitter:description" content="More than 90% of individuals start their search for goods and services online. What opportunities are you missing?" />
-			<meta property="twitter:image" content="https://nashandpine.com/logos/nap/share.jpg" />
 		</Head>
 	);
 };
