@@ -9,15 +9,15 @@ const { publicRuntimeConfig } = getConfig();
 export default function Contact() {
 
 	const [formState, setFormState] = React.useState({});
-	const [loading, setLoading] = React.useState(false);
+	const [message, setMessage] = React.useState("Submit");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setLoading(true);
+		setMessage("Loading...");
 		
 		axios.post(publicRuntimeConfig.NAP_CONTACT_WEBHOOK, {...formState})
-			.then(() => setLoading(false))
-			.catch(e = console.error(e));
+			.then(() => setMessage("Sent!"))
+			.catch(() => setMessage("Error!"));
 	};
 
 	
@@ -121,9 +121,10 @@ export default function Contact() {
 								</div>
 
 								<div className="flex justify-between items-center">
-
-									{loading && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-gray-600 rounded">Loading...</button>}
-									{!loading && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" type="submit">Submit</button>}	
+									{(message === "Submit") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" type="submit">{message}</button>}	
+									{(message === "Loading...") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-gray-600 rounded" disabled>{message}</button>}
+									{(message === "Sent!") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-green-600 rounded" disabled>{message}</button>}	
+									{(message === "Error!") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-red-600 rounded" disabled>{message}</button>}	
 								</div>
 							</form>
 						</div>
