@@ -47,12 +47,5 @@ To run the docker image that you just created, run:
 
 ---
 
-## 🌊 Digital Ocean
-
-Here's some notable Digital Ocean CLI commands: 
-
-#### Docker
- - `doctl registry login`
- - `docker tag [imageid] registry.digitalocean.com/nap/nashandpine:version`
- - `docker push registry.digitalocean.com/nap/nashandpine:version`
+Registry name: nashandpine
 
