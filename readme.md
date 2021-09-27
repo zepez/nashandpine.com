@@ -12,6 +12,7 @@ Built with:
 [NextJS](https://nextjs.org) <br />
 [Tailwind CSS](https://tailwindcss.com) <br />
 [Shuffle Editor](https://shuffle.dev) <br />
+
 ---
 
 ## ❓ FAQ
