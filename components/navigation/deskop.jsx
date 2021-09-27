@@ -17,7 +17,6 @@ export default function DesktopNav() {
 			</div>
 			<ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
 				<li><a className="text-sm hover:text-blueGray-500" href="/#features">Features</a></li>
-				<li><a className="text-sm hover:text-blueGray-500" href="/#projects">Websites</a></li>
 				<li><a className="text-sm hover:text-blueGray-500" href="/#faq">FAQ</a></li>
 				<li><a className="text-sm hover:text-blueGray-500" href="/directory">Directory</a></li>
 			</ul>
