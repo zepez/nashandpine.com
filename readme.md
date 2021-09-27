@@ -15,7 +15,7 @@ Built with:
 
 ---
 
-## ❓ ENV
+## ⌗ ENV
 
 NAP_CONTACT_WEBHOOK — Ex: https://service.domain.tld/slug
 
