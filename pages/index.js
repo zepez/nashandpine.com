@@ -43,3 +43,8 @@ export default function Home() {
 		</div>
 	);
 }
+
+
+Home.getInitialProps = async () => {
+	return {};
+};
