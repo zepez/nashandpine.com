@@ -1,7 +1,6 @@
-// import Cloud from "./cloud";
 
 
-export default function Projects() {
+export default function Breakout() {
 	return (
 		<section className="py-12 md:py-8 bg-blue-600 text-white rounded-lg" id="projects">
 			<div className="flex items-center justify-center">
