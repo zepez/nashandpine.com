@@ -1,5 +1,9 @@
 import React from "react";
+import getConfig from "next/config";
 import axios from "axios";
+
+
+const { publicRuntimeConfig } = getConfig();
 
 
 export default function Contact() {
@@ -10,11 +14,8 @@ export default function Contact() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setLoading(true);
-
-		// testing: https://n8n.nashandpine.com/webhook-test/8ea4a455-463b-4ed4-a15f-0cd001b4892c
-		// production: https://n8n.nashandpine.com/webhook/8ea4a455-463b-4ed4-a15f-0cd001b4892c
 		
-		axios.post("https://n8n.nashandpine.com/webhook/8ea4a455-463b-4ed4-a15f-0cd001b4892c", {...formState})
+		axios.post(publicRuntimeConfig.NAP_CONTACT_WEBHOOK, {...formState})
 			.then(() => setLoading(false))
 			.catch(e = console.error(e));
 	};

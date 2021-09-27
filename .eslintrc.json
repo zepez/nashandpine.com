@@ -21,7 +21,7 @@
 		"quotes": [ "error", "double" ],
 		"semi": [ "error", "always" ]
 	},
-	"ignorePatterns": ["*.*.css"],
+	"ignorePatterns": ["*.*.css", "next.config.js"],
 	"globals": {
 		"React": "writable"
 	}
