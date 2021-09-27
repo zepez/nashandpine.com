@@ -15,6 +15,14 @@ Built with:
 
 ---
 
+## ❓ ENV
+
+NAP_CONTACT_WEBHOOK — Ex: https://service.domain.tld/slug
+
+This is the webhook used to pass the data from the contact form.
+
+---
+
 ## ❓ FAQ
 
 Q: Isn't NextJS completely overkill for this project? Won't it add more overhead than necessary?
