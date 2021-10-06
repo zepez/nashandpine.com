@@ -13,7 +13,7 @@ export default function Header() {
 				<div className="pt-12 text-center">
 					<div className="max-w-lg mx-auto mb-6">
 						<h2 className="text-5xl md:text-7xl mb-4 font-bold font-heading">
-							<img src="/logos/nap/long.png" className="block mx-auto" style={{ width: 700 }} />
+							<img src="/logos/nap/long.svg" className="block mx-auto" style={{ width: 700 }} />
 						</h2>
 						<p className="leading-relaxed text-md md:text-xl">Websites that let your message shine.</p>
 					</div>
