@@ -22,9 +22,9 @@ export default function Header() {
 
 			{/* 3 image spread */}
 			<div className="block md:flex mt-12 mb:pb-24 mx-auto px-0 md:px-8" style={{ maxWidth: 1300 }}>
-				<img className="rounded-lg md:w-1/3 px-1 mx-auto my-2" src="/assets/screenshot_02.png" alt="" />
-				<img className="rounded-lg md:w-1/3 px-1 mx-auto my-2" src="/assets/screenshot_01.png" alt="" />
-				<img className="rounded-lg md:w-1/3 px-1 mx-auto my-2" src="/assets/screenshot_03.png" alt="" />
+				<img className="rounded-lg md:w-1/3 h-full px-1 mx-auto my-2" src="/assets/screenshot_02.png" alt="" />
+				<img className="rounded-lg md:w-1/3 h-full px-1 mx-auto my-2" src="/assets/screenshot_01.png" alt="" />
+				<img className="rounded-lg md:w-1/3 h-full px-1 mx-auto my-2" src="/assets/screenshot_03.png" alt="" />
 			</div>
 
 			{/* mobile navigation  */}
