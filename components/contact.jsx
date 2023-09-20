@@ -9,7 +9,7 @@ const { publicRuntimeConfig } = getConfig();
 export default function Contact() {
 
 	const [formState, setFormState] = React.useState({});
-	const [message, setMessage] = React.useState("Submit");
+	const [message, setMessage] = React.useState("Disabled");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -121,7 +121,7 @@ export default function Contact() {
 								</div>
 
 								<div className="flex justify-between items-center">
-									{(message === "Submit") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-600 hover:bg-blue-700 rounded" type="submit">{message}</button>}	
+									{(message === "Disabled") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-gray-600 rounded" style={{ pointerEvents: "none" }} type="submit" disabled>{message}</button>}	
 									{(message === "Loading...") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-gray-600 rounded" disabled>{message}</button>}
 									{(message === "Sent!") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-green-600 rounded" disabled>{message}</button>}	
 									{(message === "Error!") && <button className="w-full py-4 px-8 text-sm text-white font-semibold leading-none bg-red-600 rounded" disabled>{message}</button>}	

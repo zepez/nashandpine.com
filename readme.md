@@ -1,3 +1,5 @@
+> Please note: `nashandpine.com` is defunct. A mirror can be found at [nashandpine.zep.sh](https://nashandpine.zep.sh)
+
 
 # [NashAndPine.com](https://nashandpine.com)
 
