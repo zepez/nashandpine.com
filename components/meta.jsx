@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 
 export default function GlobalMeta() {
 	return (
@@ -13,7 +12,7 @@ export default function GlobalMeta() {
 
 			<meta property="twitter:card" content="summary_large_image" />
 			<meta property="twitter:image" content="https://nashandpine.com/logos/nap/share.jpg" />
-			<Script src="main.js" />
+			<script src="main.js" />
 		</Head>
 	);
 }
