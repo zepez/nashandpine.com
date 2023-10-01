@@ -27,7 +27,7 @@ This is the webhook used to pass the data from the contact form.
 
 ## ❓ FAQ
 
-Q: Isn't NextJS completely overkill for this project? Won't it add more overhead than necessary?
+Q: Isn't NextJS completely overkill for this project?
 
 A: Yes. NextJS is used because that's what I'm familiar with and I wanted to get this done quickly. I need to be able to extend this application with reactivity in case it's required later and I need the SEO that NextJS allows. Ergo NextJS was used.
 
