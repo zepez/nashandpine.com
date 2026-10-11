@@ -1,4 +1,4 @@
-> Please note: `nashandpine.com` is defunct. A mirror can be found at [nashandpine.zep.sh](https://nashandpine.zep.sh)
+> Please note: `nashandpine.com` is defunct. A mirror can be found at [nashandpine.zepez.dev](https://nashandpine.zepez.dev)
 
 
 # [NashAndPine.com](https://nashandpine.com)
