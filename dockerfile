@@ -1,5 +1,5 @@
 # basic setup
-FROM node:12
+FROM node:24
 WORKDIR /app
 
 ENV NODE_ENV=production
